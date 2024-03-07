@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+    <title>Bloom Haven</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div class="header container">
+        <div class="nav-bar">
+          <div class="brand">
+            <a href="#hero">
+              <h1>Bloom Haven</h1>
+            </a>
+          </div>
+          <div class="nav-list">
+            <div class="hamburger">
+              <div class="bar"></div>
+            </div>
+            <ul>
+              <li><a href="#hero" data-after="Home">Home</a></li>
+              <li><a href="#services" data-after="Service">Services</a></li>
+              <li><a href="#plants" data-after="Plants">Plants</a></li>
+              <li><a href="#about" data-after="About">About</a></li>
+              <li><a href="#contact" data-after="Contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Main -->
+    <main id="main">
+      <!-- Hero Section  -->
+      <section id="hero">
+        <div class="hero container">
+          <div>
+            <h1>Welcome to <span>BLOOM HAVEN</span></h1>
+            <h1>Discover the Beauty of Nature</h1>
+            <a href="#services" type="button" class="cta">Explore Now</a>
+          </div>
+        </div>
+      </section>
+      <!-- End Hero Section  -->
+
+      <!-- Service Section -->
+      <section id="services">
+        <div class="services container">
+          <div class="service-top">
+            <h1 class="section-title">Our <span>S</span>ervices</h1>
+            <p>
+              Explore our range of gardening services designed to make your
+              garden thrive.
+            </p>
+          </div>
+          <div class="service-bottom">
+            <div class="service-item">
+              <div class="icon">
+                <img
+                  src="https://img.icons8.com/stickers/100/paper-bag-with-seeds.png"
+                />
+              </div>
+              <h2>Landscape Design</h2>
+              <p>
+                Let us help you create the garden of your dreams with our expert
+                landscape design services.
+              </p>
+            </div>
+            <div class="service-item">
+              <div class="icon">
+                <img
+                  src="https://img.icons8.com/stickers/100/potted-plant.png"
+                />
+              </div>
+              <h2>Plant Care</h2>
+              <p>
+                Ensure your plants stay healthy and vibrant with our
+                professional plant care services.
+              </p>
+            </div>
+            <div class="service-item">
+              <div class="icon">
+                <img src="https://img.icons8.com/stickers/100/garden.png" />
+              </div>
+              <h2>Garden Maintenance</h2>
+              <p>
+                Keep your garden looking its best with our regular garden
+                maintenance services.
+              </p>
+            </div>
+            <div class="service-item">
+              <div class="icon">
+                <img
+                  src="https://img.icons8.com/stickers/100/garden-gloves.png"
+                />
+              </div>
+              <h2>Floral Arrangements</h2>
+              <p>
+                Add a touch of elegance to your space with our beautiful floral
+                arrangements.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Service Section -->
+
+      <!-- Plants Section -->
+      <section id="plants">
+        <div class="plants container">
+          <div class="plants-header">
+            <h1 class="section-title">Our Beautiful <span>P</span>lants</h1>
+          </div>
+          <div class="slider">
+            <div class="all-plants">
+              <article class="plants-item">
+                <div class="plants-info">
+                  <h1>Rose Garden</h1>
+                  <h2>Rosaceae</h2>
+                  <p>
+                    The Rose Garden offers a stunning array of roses in various
+                    colors and sizes.
+                  </p>
+                </div>
+                <div class="plants-img">
+                  <img src="./img/rose-garden.jpg" alt="Rose Garden" />
+                </div>
+              </article>
+              <article class="plants-item">
+                <div class="plants-info">
+                  <h1>Succulent Corner</h1>
+                  <h2>Succulents</h2>
+                  <p>
+                    The Succulent Corner features a diverse collection of
+                    beautiful and low-maintenance succulents.
+                  </p>
+                </div>
+                <div class="plants-img">
+                  <img
+                    src="./img/succulent-corner.jpg"
+                    alt="Succulent Corner"
+                  />
+                </div>
+              </article>
+              <article class="plants-item">
+                <div class="plants-info">
+                  <h1>Herb Garden</h1>
+                  <h2>Herbs</h2>
+                  <p>
+                    The Herb Garden is filled with aromatic herbs perfect for
+                    culinary and medicinal use.
+                  </p>
+                </div>
+                <div class="plants-img">
+                  <img src="./img/herb-garden.jpg" alt="Herb Garden" />
+                </div>
+              </article>
+              <article class="plants-item">
+                <div class="plants-info">
+                  <h1>Vegetable Patch</h1>
+                  <h2>Vegetables</h2>
+                  <p>
+                    The Vegetable Patch offers a variety of fresh and organic
+                    vegetables grown with care.
+                  </p>
+                </div>
+                <div class="plants-img">
+                  <img src="./img/vegetable-patch.jpg" alt="Vegetable Patch" />
+                </div>
+              </article>
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+            <div class="dot-container"></div>
+            <!-- Add this div for dot container -->
+          </div>
+        </div>
+      </section>
+      <!-- End Plants Section -->
+
+      <!-- About Section -->
+      <section id="about">
+        <div class="about container">
+          <div class="col-left">
+            <div class="about-img">
+              <img src="./img/gardener.jpg" alt="Gardener" />
+            </div>
+          </div>
+          <div class="col-right">
+            <h1 class="section-title">About <span>Our Garden</span></h1>
+            <h2>Your Trusted Garden Partner</h2>
+            <p>
+              At Bloom Haven, we are passionate about creating and maintaining
+              beautiful outdoor spaces. Our team of skilled professionals is
+              dedicated to providing top-notch gardening services tailored to
+              meet your unique needs.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <div class="contact container">
+          <div>
+            <h1 class="section-title">Contact <span>Us</span></h1>
+          </div>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="icon">
+                <img
+                  src="https://img.icons8.com/stickers/100/ringer-volume.png"
+                />
+              </div>
+              <div class="contact-info">
+                <h1>Phone</h1>
+                <h2>+1 234 123 1234</h2>
+                <h2>+1 234 123 1234</h2>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="icon">
+                <img src="https://img.icons8.com/stickers/100/new-post.png" />
+              </div>
+              <div class="contact-info">
+                <h1>Email</h1>
+                <h2>info@bloomhaven.com</h2>
+                <h2>support@bloomhaven.com</h2>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="icon">
+                <img src="https://img.icons8.com/stickers/100/map-marker.png" />
+              </div>
+              <div class="contact-info">
+                <h1>Address</h1>
+                <h2>123 Garden Avenue, City, Country</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+    </main>
+    <!-- End Main -->
+
+    <!-- Aside -->
+    <aside id="developer-info">
+      <div class="developer container">
+        <div>
+          <h1 class="section-title">Meet The <span>Developer</span></h1>
+        </div>
+        <div class="developer-details">
+          <img src="./img/developer.jpg" alt="Developer Photo" />
+          <div class="developer-info">
+            <h3>Raquel Junia Hermawan</h3>
+            <h4>Frontend Web Developer</h4>
+            <p>Phone: +6285780330608</p>
+            <p>Email: raquel@example.com</p>
+            <!-- Add social media links -->
+            <div class="social-links">
+              <a href="https://www.instagram.com/_raqueljn" target="_blank"
+                ><img
+                  src="https://img.icons8.com/sf-regular/48/instagram-new.png"
+                  alt="Instagram"
+              /></a>
+              <a href="https://github.com/raqueljunia" target="_blank"
+                ><img
+                  src="https://img.icons8.com/sf-regular/48/github.png"
+                  alt="GitHub"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/raqueljuniahermawan"
+                target="_blank"
+                ><img
+                  src="https://img.icons8.com/sf-regular/48/linkedin.png"
+                  alt="LinkedIn"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- End Aside -->
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="footer container">
+        <div class="footer-content">
+          <div class="brand">
+            <h1>Bloom Haven</h1>
+          </div>
+          <h2>Your Sanctuary in Nature</h2>
+          <div class="social-icon">
+            <div class="social-item">
+              <img src="https://img.icons8.com/glyph-neue/64/facebook.png" />
+            </div>
+            <div class="social-item">
+              <img
+                src="https://img.icons8.com/glyph-neue/64/instagram-new--v1.png"
+              />
+            </div>
+            <div class="social-item">
+              <img src="https://img.icons8.com/glyph-neue/64/twitter.png" />
+            </div>
+            <div class="social-item">
+              <img
+                src="https://img.icons8.com/glyph-neue/64/facebook-messenger.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="footer-links-wrapper">
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Plants</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-links-wrapper">
+          <div class="footer-links">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-newsletter">
+          <h3>Subscribe to Our Newsletter</h3>
+          <form>
+            <input type="email" placeholder="Enter your email" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+        <p class="footer-copyright">
+          Copyright ©2024 Made by Raquel Junia Hermawan. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="./app.js"></script>
+  </body>
+</html>
