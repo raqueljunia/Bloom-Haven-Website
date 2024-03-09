@@ -253,38 +253,38 @@ p {
 }
 
 #hero h1 {
-  flex-direction: column; /* Menjadikan konten berada dalam satu kolom */
-  align-items: center; /* Pusatkan konten secara horizontal */
-  margin-top: 20px; /* Berikan margin atas agar tidak bertabrakan dengan header */
+  flex-direction: column; 
+  align-items: center; 
+  margin-top: 20px; 
 }
 
 #hero h1:nth-child(1) {
   font-size: 5rem;
-  color: white; /* Ubah warna teks agar terlihat */
+  color: white; 
   animation-delay: 1s;
 }
 
 #hero h1:nth-child(2) {
   font-size: 3rem;
-  color: white; /* Ubah warna teks agar terlihat */
+  color: white; 
   animation-delay: 2s;
   font-weight: 500;
 }
 
 #hero h1:nth-child(3) {
   font-size: 2.5rem;
-  color: white; /* Ubah warna teks agar terlihat */
+  color: white; 
   animation-delay: 3s;
-  margin-top: 20px; /* Berikan margin atas agar tidak bertabrakan dengan teks sebelumnya */
+  margin-top: 20px; 
   animation: text_reveal 0.5s ease forwards;
 }
 
 #hero h1 span {
   font-size: 6rem;
-  display: block; /* Jadikan span menjadi blok */
-  color: #FFABAB; /* Ubah warna teks agar terlihat */
-  border-radius: 0.3em; /* Tambahkan border radius untuk sudut yang lebih halus */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Tambahkan bayangan teks */
+  display: block; 
+  color: #FFABAB; 
+  border-radius: 0.3em; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* End Hero Section */
@@ -388,6 +388,7 @@ p {
   margin: 20px auto;
   overflow: hidden;
   border-radius: 10px;
+  height: 530px;
 }
 
 #plants .plants-info {
@@ -439,7 +440,7 @@ p {
 }
 
 #plants .plants-img img {
-  height: 400px; /* Maintain aspect ratio */
+  height: 400px; 
   transition: 0.4s ease transform;
 }
 
@@ -447,7 +448,6 @@ p {
   transform: scale(1.1);
 }
 
-/* Add these styles for slider functionality */
 .slider {
   position: relative;
 }
@@ -464,7 +464,6 @@ p {
   flex: 0 0 auto;
 }
 
-/* Optional styles to hide default scrollbar */
 .all-plants::-webkit-scrollbar {
   display: none;
 }
@@ -490,7 +489,6 @@ p {
   right: 10px;
 }
 
-/* Add these styles for dot indicators */
 .dot-container {
   text-align: center;
   margin-top: 20px;
@@ -554,12 +552,12 @@ p {
   position: relative;
   border: 11px solid rgb(254, 254, 252);
 }
+
 /* End About Section */
 
-/* contact Section */
+/* Contact Section */
 #contact .contact {
   flex-direction: column;
-  max-width: 1200px;
   margin: 0 auto;
   width: 90%;
   padding: 50px 0;
@@ -614,10 +612,94 @@ p {
   font-weight: 500;
 }
 
-/*End contact Section */
+/*End Contact Section */
+
+/* Aside */
+#developer-info {
+  padding-bottom: 100px; 
+  text-align: center; 
+  padding: 100px 0;
+}
+
+#developer-info .developer {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+#developer-info .developer {
+  max-width: 600px; 
+  margin: 0 auto; 
+}
+
+#developer-info .developer-details {
+  align-items: center; 
+  justify-content: center; 
+  padding: 40px 80px; 
+  border-radius: 3%;
+  border: 2px solid #ffffffe1;
+  background-color: #ffffff9c;
+  margin-top: 30px;
+}
+
+#developer-info img {
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  box-shadow: 0 0 20px rgba(238, 255, 199, 0.7);
+}
+
+#developer-info img {
+  transition: 0.5s ease;
+}  
+
+#developer-info .developer-info h3 {
+  margin: 10px 0;
+  margin-bottom: 15px;
+  font-size: 2rem;
+  color: #000000;
+  white-space: nowrap;
+}
+
+#developer-info .developer-info h4 {
+  margin: 10px 0;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #9d0008;
+}
+
+#developer-info .developer-info p {
+  margin: 5px 0;
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+#developer-info .social-links {
+  margin-top: 20px;
+}
+
+#developer-info .social-links a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#developer-info .social-links img {
+  background-color: transparent;
+  width: 40px;
+  height: auto;
+}
+
+#developer-info .social-links a:hover img {
+  opacity: 0.7;
+}
+
+/* End Aside Section */
 
 /* Footer */
 #footer {
+  padding: 0 20px;
   background-color: #7d1079;
 }
 
@@ -627,6 +709,7 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  align-items: flex-start;
   padding-top: 50px;
   padding-bottom: 10px;
 }
@@ -637,12 +720,13 @@ p {
 #footer .footer-links,
 #footer .footer-newsletter {
   flex: 1 1 25%;
-  max-width: 25%;
+  max-width: 30%;
 }
 
 #footer .brand h1 {
   color: white;
   font-size: 2rem;
+  white-space: nowrap;
 }
 
 #footer h2 {
@@ -651,20 +735,22 @@ p {
   font-size: 1.4rem;
   letter-spacing: 0.1rem;
   margin: 0;
+  white-space: nowrap;
 }
 
 #footer .social-icon {
   display: flex;
-  justify-content: center;
 }
 
 #footer .social-item {
-  margin: 0 4px;
+  padding: auto;
+  margin: 4px;
+  margin-top: 10px;
 }
 
 #footer .social-item img {
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
 }
 
 #footer .footer-links,
@@ -680,6 +766,10 @@ p {
   margin-bottom: 10px;
 }
 
+#footer .footer-links h3 {
+  white-space: nowrap;
+}
+
 #footer .footer-links ul,
 #footer .footer-newsletter form {
   list-style: none;
@@ -690,6 +780,7 @@ p {
   color: white;
   text-decoration: none;
   transition: color 0.3s ease;
+  white-space: nowrap;
 }
 
 #footer .footer-links ul li a:hover {
@@ -731,98 +822,7 @@ p {
   margin-bottom: 20px;
 }
 
-/* End Footer */
-
-
-/* Aside */
-#developer-info {
-  padding-bottom: 100px; /* Padding untuk jarak antara konten dan batas elemen */
-  text-align: center; /* Pusatkan semua elemen di dalam kotak */
-  padding: 100px 0;
-}
-
-#developer-info .developer {
-    display: flex; /* Menjadikan kontainer flexbox */
-    flex-direction: column; /* Menyusun item secara vertikal */
-    align-items: center; /* Posisikan elemen ke tengah secara vertikal */
-    justify-content: center; /* Pusatkan konten secara horizontal */
-}
-
-/* Kontainer */
-#developer-info .developer {
-  max-width: 600px; /* Lebar maksimum kontainer */
-  margin: 0 auto; /* Pusatkan kontainer di tengah halaman */
-}
-
-/* Detail pengembang */
-#developer-info .developer-details {
-    align-items: center; /* Posisikan elemen ke tengah secara vertikal */
-    justify-content: center; /* Pusatkan konten secara horizontal */
-    padding: 40px 200px; /* Tambahkan padding untuk foto dan info pengembang */
-    border-radius: 3%;
-    border: 2px solid #ffffffe1;
-    background-color: #ffffff9c;
-    margin-top: 30px;
-}
-
-/* Gambar pengembang */
-#developer-info img {
-  width: 150px; /* Lebar gambar */
-  height: 150px; /* Tinggi gambar */
-  border-radius: 50%; /* Bentuk gambar menjadi lingkaran */
-  margin-bottom: 10px; /* Spasi antara gambar dan teks */
-  box-shadow: 0 0 20px rgba(238, 255, 199, 0.7);
-}
-
-/* Memberikan efek transisi untuk bayangan */
-#developer-info img {
-  transition: box-shadow 0.5s ease; /* Menentukan properti yang akan mengalami transisi dan durasinya */
-}  
-
-/* Info pengembang */
-#developer-info .developer-info h3 {
-  margin: 10px 0; /* Atur margin atas dan bawah untuk judul */
-  margin-bottom: 15px;
-  font-size: 2rem; /* Ukuran font judul */
-  color: #000000; /* Warna teks judul */
-  white-space: nowrap;
-}
-
-/* Info pengembang */
-#developer-info .developer-info h4 {
-  margin: 10px 0; /* Atur margin atas dan bawah untuk judul */
-  margin-bottom: 20px;
-  font-size: 1.5rem; /* Ukuran font judul */
-  color: #9d0008; /* Warna teks judul */
-}
-
-#developer-info .developer-info p {
-  margin: 5px 0; /* Atur margin atas dan bawah untuk paragraf */
-  font-size: 1.5rem; /* Ukuran font paragraf */
-  color: #000000; /* Warna teks paragraf */
-}
-
-/* Social Links */
-#developer-info .social-links {
-  margin-top: 20px; /* Add some space between contact info and social links */
-}
-
-#developer-info .social-links a {
-  display: inline-block; /* Make the links inline */
-  margin-right: 10px; /* Add space between each social icon */
-}
-
-#developer-info .social-links img {
-  background-color: transparent;
-  width: 40px; /* Set the width of the social media icons */
-  height: auto; /* Maintain the aspect ratio */
-}
-
-#developer-info .social-links a:hover img {
-  opacity: 0.7; /* Reduce opacity of social icons on hover */
-}
-
-/* End Aside */
+/* End Footer Section */
 
 /* Keyframes */
 @keyframes hamburger_puls {
@@ -833,30 +833,6 @@ p {
   100% {
     opacity: 0;
     transform: scale(1.4);
-  }
-}
-
-@keyframes text_reveal_box {
-  50% {
-    width: 100%;
-    left: 0;
-  }
-  100% {
-    width: 0;
-    left: 100%;
-  }
-}
-
-@keyframes text_reveal {
-  100% {
-    color: white;
-  }
-}
-
-@keyframes text_reveal_name {
-  100% {
-    color: crimson;
-    font-weight: 500;
   }
 }
 
@@ -893,7 +869,7 @@ p {
   #plants .plants-item {
     height: 400px;
     margin: 0;
-    width: 100%;
+    width: 85%;
     border-radius: 0;
   }
   #plants .all-plants .plants-info {
@@ -923,7 +899,7 @@ p {
   }
   /* End About */
 
-  /* contact  */
+  /* Contact  */
   #contact .contact {
     flex-direction: column;
     padding: 100px 0;
@@ -956,7 +932,15 @@ p {
     text-align: center;
     padding: auto;
   }
-  /* End contact  */
+  /* End Contact  */
+
+  /* Aside */
+  #developer-info .developer-details {
+    align-items: center; 
+    justify-content: center; 
+    padding: 40px 200px; 
+  }
+  /* End Aside  */
 }
 /* End Media Query For Tablet */
 
