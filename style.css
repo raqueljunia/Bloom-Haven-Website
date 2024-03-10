@@ -1,5 +1,4 @@
 @import 'https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap';
-@import 'https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap';
 
 * {
   padding: 0;
@@ -637,7 +636,7 @@ p {
 #developer-info .developer-details {
   align-items: center; 
   justify-content: center; 
-  padding: 40px 80px; 
+  padding: 40px 70px; 
   border-radius: 3%;
   border: 2px solid #ffffffe1;
   background-color: #ffffff9c;
